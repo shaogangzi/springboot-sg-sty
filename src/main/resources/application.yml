@@ -1,3 +1,6 @@
 server:
   port: 8081
 
+person:
+  age: 18
+  name: 张三
