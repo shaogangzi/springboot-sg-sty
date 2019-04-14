@@ -1,9 +1,25 @@
-server:
-  port: 8081
 
-person:
-  age: 18
-  name: 张三
+spring:
+
+  #数据源
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot-data?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&serverTimezone=UTC
+    username: root
+    password: 123456
+
+  #JPA操作
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+
+  #激活的环境
+  profiles:
+    active: dev
+
 
 
 
