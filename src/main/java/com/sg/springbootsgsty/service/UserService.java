@@ -6,5 +6,11 @@ import java.util.List;
 
 public interface UserService {
 
-    List<User> queryUsersByCondition(User user);
+    List<User> selectUsersByCondition(User user);
+
+    int  addUser(User user);
+
+    int  addUsers(List<User> users);
+
+    User selectUserById(Long id);
 }

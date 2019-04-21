@@ -27,7 +27,7 @@ public class SpringbootSgStyApplicationTests {
 	public void contextLoads() {
 	    User user =new User();
 	    user.setAge(18);
-        List<User> list = userService.queryUsersByCondition(user);
+        List<User> list = userService.selectUsersByCondition(user);
         System.out.println(JSON.toJSONString(list));
     }
 
