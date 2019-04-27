@@ -8,7 +8,6 @@ import lombok.experimental.Accessors;
 @Data
 @Builder
 @Accessors(chain = true)
-@ToString
 public class User {
     private Long id;
     private String userCode;
